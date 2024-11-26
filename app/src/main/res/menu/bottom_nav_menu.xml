@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/homeFragment"
-        android:title="Home"
-        android:icon="@drawable/home"
-        tools:ignore="HardcodedText" />
+
     <item
         android:id="@+id/recetaFragment"
         android:title="Receta"
@@ -22,5 +18,7 @@
         android:title="Usuario"
         android:icon="@drawable/usuario"
         tools:ignore="HardcodedText" />
+
+
 
 </menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth=".5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/NAME_DESSERT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del postre"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- Nombre categoria -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <!-- Media -->
+
+
+        <TextView
+            android:id="@+id/NAME_CATEGORY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoría del postre"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <!-- Fecha de agregado -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/calendario"
+                android:tint="@color/black"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:id="@+id/DATE_ADDED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de publicación"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/material_dynamic_primary0" />
+
+        </LinearLayout>
+        <!-- imagen -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/IMAGE_URL"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:contentDescription="Imagen gráfica del postre"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anadir" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/NAME_PERSON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Publicado por"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="?android:attr/textColorSecondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!--   descripcion         -->
+        <TextView
+            android:id="@+id/DESCRIPTION"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del postre"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_ver"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/verde_Esmeralda"
+                app:iconTint="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

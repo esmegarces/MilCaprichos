@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_formulario">
+
+    <!-- Nombre del postre -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Nombre Postre"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NAME_DESSERT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:textColor="@color/verde_Esmeralda" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Imagen del postre -->
+    <ImageView
+        android:id="@+id/IMAGE_DESSERT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:contentDescription="Imagen del postre"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Descripción -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Descripción"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/DESCRIPTION"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/verde_Esmeralda" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Ingredientes -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingredientes"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:errorEnabled="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/NAME_INGREDIENT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
+
+    <!-- Grupo de chips -->
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:singleLine="false" />
+
+    <!-- Botones de acción -->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="end"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="8dp">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_cancelar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/verde_Esmeralda"-->
+<!--            android:text="Cancelar"-->
+<!--            android:textColor="@color/white" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_guardar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/verde_Esmeralda"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:text="Guardar"-->
+<!--            android:textColor="@color/white" />-->
+<!--    </LinearLayout>-->
+</LinearLayout>

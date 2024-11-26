@@ -3,17 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
-
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.milcaprichos.fragment_home"
-        android:label="Home Fragment"
-        tools:layout="@layout/fragment_home" />
+    app:startDestination="@id/recetaFragment">
 
     <fragment
         android:id="@+id/recetaFragment"
-        android:name="com.example.milcaprichos.fragment_receta"
+        android:name="com.example.milcaprichos.FragmentReceta"
         android:label="Receta Fragment"
         tools:layout="@layout/fragment_receta" />
 

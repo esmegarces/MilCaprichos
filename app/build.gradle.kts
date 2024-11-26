@@ -39,7 +39,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation("androidx.navigation:navigation-fragment:2.7.1")
     implementation("androidx.navigation:navigation-ui:2.7.1")
-    implementation("com.google.android.material:material:1.2.0")
+    implementation("com.google.android.material:material:1.9.0")
     implementation("com.android.volley:volley:1.2.1")
     implementation("com.squareup.picasso:picasso:2.8")
     testImplementation(libs.junit)
